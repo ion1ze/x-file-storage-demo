@@ -1,0 +1,10 @@
+dromara:
+  x-file-storage:
+    default-platform: local-plus
+    local-plus:
+      - platform: local-plus
+        enable-storage: true
+        enable-access: true
+        domain: http://localhost:8080/uploads/
+        path-patterns: /uploads/**
+        storage-path: ${user.dir}/.data/uploads/
